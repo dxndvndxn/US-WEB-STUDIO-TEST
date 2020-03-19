@@ -21,8 +21,8 @@ if($data->Valute->USD->Value > $data->Valute->USD->Previous){
 }
 //EUR
 if($data->Valute->EUR->Value > $data->Valute->EUR->Previous){
-    echo "Обменный курс USD по ЦБ РФ на сегодня: {$data->Valute->EUR->Value}" ."&and;"."<br>";
+    echo "Обменный курс USD по ЦБ РФ на сегодня: {$data->Valute->EUR->Value}" ."&and;";
 }else{
-    echo "Обменный курс USD по ЦБ РФ на сегодня: {$data->Valute->EUR->Value}" ."&or;"."<br>";
+    echo "Обменный курс USD по ЦБ РФ на сегодня: {$data->Valute->EUR->Value}" ."&or;";
 }
 
