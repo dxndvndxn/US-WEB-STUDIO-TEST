@@ -41,7 +41,7 @@ class GetCurrency
         $result = ['USD' => array($previousUSD,$currentUSD), 'EU' => array($previousEU,$currentEU)];
 
         //Проверяем прошли ли 24 часа и обнавляем время
-        if($lastTime + ((3600 * 24) * 2) < $timestamp){
+        if($lastTime + (3600 * 24)  < $timestamp){
             $array['@attributes']['Date'] = $timestamp;
             $json = json_encode($array);
             file_put_contents($previousData, $json);
